@@ -1,0 +1,20 @@
+# peactice 1
+plot(iris$Sepal.Length, iris$Sepal.Width, main = "Length and Width", xlab = "Length", ylab = "Width")
+
+# practice 2
+plot(iris$Sepal.Length, iris$Sepal.Width, type = "l", main = "Length and Width", xlab = "Length", ylab = "Width")
+
+# practice 3
+y_lim <- c(0, 1.1 * max(table(chickwts$feed)))
+bar_plt <- barplot(table(chickwts$feed), main = "Cute chicken", xlab = "Feed", ylab = "Weight", ylim = y_lim)
+text(x = bar_plt, y = table(chickwts$feed), label = table(chickwts$feed), pos = 3)
+
+# practice 4
+par(mfrow = c(1, 2))
+boxplot(women$height, main = "Distribution of height")
+boxplot(women$weight, main = "Distribution of weight")
+
+# practice 5
+par(mfrow = c(1, 2)) 
+hist(women$height, main = "Distribution of height", xlab = "height")
+hist(women$weight, main = "Distribution of weight", xlab = "weight")
